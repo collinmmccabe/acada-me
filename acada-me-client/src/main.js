@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import * as FineUploader from 'fine-uploader'
 
+Vue.prototype.$FineUploader = FineUploader
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

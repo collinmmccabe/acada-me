@@ -66,22 +66,16 @@ export default {
       this.uploadError = null;
     },
     save(formData) {
+      var reader  = new FileReader();
       // upload data to the server
       this.currentStatus = STATUS_SAVING;
 
       const photos = formData.getAll('photos');
+      reader.readAsText(photos[0]);
+      console.log(reader);
 
-      console.log(photos)
-      console.log('save it!')
-      // upload(formData)
-      //   .then(x => {
-      //     this.uploadedFiles = [].concat(x);
-      //     this.currentStatus = STATUS_SUCCESS;
-      //   })
-      //   .catch(err => {
-      //     this.uploadError = err.response;
-      //     this.currentStatus = STATUS_FAILED;
-      //   });
+      console.log(reader.result);
+
     },
     filesChange(fieldName, fileList) {
       // handle file changes
@@ -122,6 +116,11 @@ li {
 a {
   color: #42b983;
 }
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+  }
 
 .dropbox {
   outline: 2px dashed grey; /* the dash box */

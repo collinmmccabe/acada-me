@@ -8,14 +8,14 @@
     <ul>
       <li>
         <a
-          href="#/Results"
+          href="#/results"
         >
           Results
         </a>
       </li>
       <li>
         <a
-          href="#/Get"
+          href="#/get"
         >
           SearchGrants
         </a>

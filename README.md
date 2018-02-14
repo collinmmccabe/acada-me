@@ -1,2 +1,2 @@
 # acada-me
-Academic matchmaking website
+Website for matching researchers to funding
